@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Make me stream</string>
+    <string name="action_settings">Settings</string>
+    <string name="make_me_stream_server">Make me stream server url</string>
+    <string name="tv_uid">TV uid</string>
+    <string name="tv_name">TV Name (ex : bedroom)</string>
+</resources>

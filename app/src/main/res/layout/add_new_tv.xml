@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_remote_layout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/make_me_stream_server"
+            android:layout_width="match_parent"
+            android:inputType="textFilter|textNoSuggestions"
+            android:layout_height="wrap_content"
+            android:hint="@string/make_me_stream_server" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/tv_uid"
+            android:layout_width="match_parent"
+            android:inputType="textFilter|textNoSuggestions"
+            android:layout_height="wrap_content"
+            android:hint="@string/tv_uid" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:inputType="textFilter|textNoSuggestions"
+            android:layout_height="wrap_content"
+            android:hint="@string/tv_name" />
+
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
