@@ -59,8 +59,14 @@ public class MainActivity extends AppCompatActivity {
         if(mUri!=null)
         Log.d("streamdebug","all "+getIntent().getData().toString());
         Log.d("streamdebug","all "+getIntent().toString());
-        if(mUri == null && getIntent().getClipData()!=null && getIntent().getClipData().getItemCount() >0)
-            mUri = getIntent().getClipData().getItemAt(0).getText().toString();
+        if(mUri == null) {
+            if (getIntent().getClipData()!=null && getIntent().getClipData().getItemCount() >0&&getIntent().getClipData().getItemAt(0).getText() != null)
+                mUri = getIntent().getClipData().getItemAt(0).getText().toString();
+            else if (getIntent().getStringExtra("android.intent.extra.TEXT")!=null){
+                mUri = getIntent().getStringExtra("android.intent.extra.TEXT");
+            }
+        }
+
         if(mUri!=null)
             mUri = mUri.replace("/watch/","/embed/");
         setContentView(R.layout.activity_main);
