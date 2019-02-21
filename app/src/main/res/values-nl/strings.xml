@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Make me stream</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="make_me_stream_server">Make me stream - server-url</string>
+    <string name="tv_uid">TV-modelnummer</string>
+    <string name="tv_name">TV-naam (bijv.: slaapkamer)</string>
+</resources>
